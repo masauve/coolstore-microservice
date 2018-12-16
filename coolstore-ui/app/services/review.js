@@ -5,7 +5,7 @@ angular.module("app")
 .factory('review', ['$http', '$q', 'COOLSTORE_CONFIG', 'Auth', '$location', function($http, $q, COOLSTORE_CONFIG, $auth, $location) {
 	var factory = {}, baseUrl;
 
-    baseUrl="https://coolstore-api-3scale-apicast-staging.api.apps.myocp.net/api/review";
+    baseUrl="http://coolstore-api-3scale-apicast-staging.api.apps.myocp.net/api/review";
 	
 
     factory.getReviews = function(itemId) {
